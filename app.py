@@ -24,14 +24,14 @@ studytime_ui = st.selectbox(
 
 if studytime_ui <= 2:
     studytime = 1
-elif studytime_ui <= 5:
+elif studytime_ui <= 3:
     studytime = 2
-elif studytime_ui <= 10:
+elif studytime_ui <= 4:
     studytime = 3
 else:
     studytime = 4
 failures = st.selectbox("Previous Failures", [0, 1, 2, 3])
-absences = st.slider("Number of Absences", 0, 100, 5)
+absences = st.slider("Number of Absences", 0, 100, 2)
 schoolsup = st.radio("School Support", ["Yes", "No"])
 famsup = st.radio("Family Support", ["Yes", "No"])
 internet = st.radio("Internet Access", ["Yes", "No"])
